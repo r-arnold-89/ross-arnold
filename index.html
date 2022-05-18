@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="CSS/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
+        <header>
+            <div class='logo'><span class='first-letter'>R</span>oss <span class='first-letter'>A</span>rnold<span class='logo-line'>|</span><span class='logo-line'>Portfolio</span></div>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <nav id="nav">
+                <ul>
+                    <li><a href="#nav">Home</a></li>
+                    <li><a href="#aboutme">About</a></li>
+                    <li><a href="#tech-stack">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <label for="nav-toggle" class="nav-toggle-label">
+               <span></span>
+            </label>
+        </header>
+
+        <br>
+
+        <section class="main">
+
+            <section class="container">
+
+                <div class="tech-stack">
+
+                    <div id="aboutme" class="aboutme">
+                        <h2>About Me</h2>
+                        <img class="aboutMeImg" src="Images/meAndRilo.jpg" alt="A picture of me and my dog">
+                        <p class="me">I have studied Web Development through IT Career Switch, I am enjoying learning new
+                        code daily. I am looking forward to seeing what I'll be able to create and where I'll be creating it as I gain more and more skills.
+                        </p>
+                        <br>
+                        <p class="me">When I'm not coding, I'll more than like be out walking with my partner and our dog. Outside of that I enjoy watching rugby and playing pretty much any sport or boardgame I can.</p>
+                    </div>
+
+                 </div>
+            </section>
+
+        
+        
+            <section class="container">
+                <div id="tech-stack" class="tech-stack">
+                    <div class="aboutme">
+                    <h2>Skills</h2>
+                        <div class="tech-box">
+                        <div class="tech-imgs">
+                            <img class="skills-img" src="Images/html5.png" alt="html5 logo">
+                            <img class="skills-img" src="Images/CSS3_logo_and_wordmark.png" alt="CSS3 logo">
+                            <img class="skills-img" src="Images/JavaScript-logo.png" alt="JavaScript logo">
+                            <img class="skills-img" src="Images/GitHub_Logo_White.png" alt="GitHub logo">
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        
+        </section>
+
+        <section id="projects" class="projects">
+            
+            
+                <div class="slider">
+                  <figure>
+                  <img class="project-imgs" src="Images/wheresRilo.png">
+                  <img class="project-imgs" src="Images/tictac.png">
+                  <img class="project-imgs" src="Images/numbers.png"> 
+                  <img class="project-imgs" src="Images/gallery.png"> 
+                  <img class="project-imgs" src="Images/dogAPI.png"> 
+                  <img class="project-imgs" src="Images/wheresRilo.png">
+                </figure>
+              </div>
+              
+              <div class="slider">
+                <figure>
+                <div class="img-description">
+                  <h1>Where's Rilo</h1>
+                  <p>A simple where's wally style game. Using HTML, CSS and Javascript</p>
+                </div>
+                <div class="img-description">
+                  <h1>Naughts and Crosses</h1>
+                  <p>Naughts and crosses built using Javascript</p>
+                </div>
+                <div class="img-description">
+                  <h1>Number Guessing</h1>
+                  <p>In this number guessing game the computer generates a random hidden number from 1 top 10,
+                    the player and computer then try and guess the number the closest to the hidden number gains a point.
+                  </p>
+                </div>
+                <div class="img-description">
+                  <h1>Gallery</h1>
+                  <p>A simple website that uses flexbox to style a photo gallery, it also contains
+                    an image carousel that was built using Javascript.
+                  </p>
+                </div>
+                <div class="img-description">
+                  <h1>dogAPI</h1>
+                  <p>This API allows you to see images of any selected dog from the drop down list</p>
+                </div>
+                <div class="img-description">
+                  <h1>Where's Rilo</h1>
+                  <p>A simple where's wally style game. Using HTML, CSS and Javascript</p>
+                </div>
+                
+              </figure>
+            </div>
+
+
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="contact">
+                <form name="contact" action="/pages/thankyou.html" method="POST" data-netlify="true">
+                        <h2>Contact</h2>
+                        <input type="hidden" name="_subject" value="New email">
+                        <input class="input" type="email" name="email" placeholder="Email Address" required>
+                        <br>
+                        <input type="hidden" name="_next" value="">
+                        <input class="input" type="text" name="message" placeholder="Message" required>
+                        <br>
+                        <div class="field">
+                          <div data-netlify-recaptcha="true"></div>
+                        </div>
+                        <button class="submit-btn" type="submit">Send</button>
+                    
+                </form> 
+                </div>
+            </div>
+    
+        </section>
+
+        <section>
+            <footer>
+                <p>&copy;</p>
+            </footer>
+        </section>
+
+        
+        <script src="JS/script.js"></script> 
+    </body>
+</html>
