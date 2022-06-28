@@ -279,6 +279,7 @@ p {
 .slider {
     overflow: hidden;
     width: 70%;
+    height:fit-content;
     margin-right: auto;
     margin-left: auto;
 }
